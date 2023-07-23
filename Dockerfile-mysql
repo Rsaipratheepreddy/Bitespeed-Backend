@@ -1,0 +1,11 @@
+# Use the official MySQL image as the base image
+FROM mysql:8
+
+# Set environment variables for MySQL configuration
+ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_DATABASE=your_database_name
+ENV MYSQL_USER=your_mysql_user
+ENV MYSQL_PASSWORD=your_mysql_password
+
+# Expose the port that MySQL listens on (usually 3306)
+EXPOSE 3306
